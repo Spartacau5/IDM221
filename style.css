@@ -27,12 +27,31 @@ body {
     z-index: 10;
     margin-left: 348px;
 }
-
+.footer {
+	height: auto;
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	color: #ffffff;
+	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+	transition-duration: .2s;
+    transition-property: box-shadow;
+}
+.center {
+	text-align: center;
+}
 .logo {
-    width: 64px;
-    height: 64px;
-    background-size: 64px 64px;
+	display: flex;
+	justify-content: left;
+	align-content: left;
+    width: 90px;
+    height: 90px;
+    background-size: 90px 90px;
+	border: 1px solid;
+    box-shadow: 0 5px 10px #888888;
     background-image: url('http://www.arpitahluwalia.com/Assets/Asset%201.png');
+	
 }
 
 .btn2 {
@@ -56,8 +75,9 @@ body {
     text-align: center;
     padding-bottom: 12px;
     font-size: 18px;
-    background-image: linear-gradient(-180deg, #5B86FF 0%, #5674FF 100%);
-    transition-duration: .2s;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+	transition-duration: .2s;
     transition-property: box-shadow;
 }
 
@@ -67,7 +87,7 @@ a .btn {
 }
 
 a {
-    color: #5B86FF;
+    color: #323232;
     text-decoration: none;
     font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -84,16 +104,20 @@ a {
 
 .card:hover {
     transform: scale3d(0.98, 0.98, 1);
-    border: 1px solid #ddd;
+    border: 1px solid #ddd;			
+}
+.phto {
+	background-image: url('https://www.arpitahluwalia.com/Summit.jpg');
+	align-content: center;
+    max-width: auto;
+	background-size: cover;
+	color: #ffffff;	
+	text-align: center;
+	background-position: center;
 }
 
 .card img {
     width: 200px;
-    height: 200px;
-}
-
-.card fix {
-    width: 500px;
     height: 200px;
 }
 
@@ -104,6 +128,9 @@ a {
     line-height: 22px;
 }
 
+.insta {
+	margin: 17px;
+}
 .consilium {
     background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);
     color: #fff;
@@ -122,10 +149,9 @@ a {
 }
 
 .more {
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    color: #ffffff;
+background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+	color: #ffffff;
 }
-
 .petlo {
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     color: #ffffff;
@@ -139,15 +165,23 @@ a {
     color: #fff;
 }
 
-.blueheader {
-    padding-top: 16px;
-    margin-bottom: -10px;
+.blackheader {
+    padding-bottom: 16px;
+    margin: 20px 0 -20px 0;
     font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #5B86FF;
+    text-transform:uppercase;
+	font-weight: bold;
+    font-size: 16px;
+    color: #323232;
 }
-
+.whiteheader {
+    margin: 95px 0;
+    font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-transform:uppercase;
+	font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+}
 .descriptor {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -165,7 +199,7 @@ a {
     margin: 4px;
     padding: 2px;
     border-radius: 32px;
-    color: #5B86FF;
+    color: #323232;
     width: 36px;
     height: 36px;
     text-align: center;
@@ -187,10 +221,27 @@ a {
     .title {
         color: #ffffff;
     }
+	.logo {
+		margin: auto;
+		display: flex;
+		align-content: center;
+	}
     .descriptor {
         font-size: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
     }
-    .blueheader {
+	.social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+    .blackheader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
         padding-top: 20px;
     }
     .leftblock {
@@ -203,6 +254,15 @@ a {
         float: left;
         margin-left: auto;
     }
+	.center {
+		margin-top: -30px;
+	}
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
     .card {
         border-radius: 10px;
         width: 90vw;
@@ -228,4 +288,15 @@ a {
         padding: 20px 28px 24px 20px;
         font-size: 18px;
     }
-}
+	.insta {
+		margin: 15px;
+	}
+	
+	.soundcloud {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50%;
+		width: auto;
+		max-width: auto;
+	}
